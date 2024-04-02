@@ -1,7 +1,16 @@
 version: 0.0
 os: linux
+
+#!/bin/bash
+
+# Define the directory where artifacts are stored
+ARTIFACTS_DIR=/home/ec2-user/
+
+# Remove previous artifacts
+sudo rm -rf my-app
+
 files:
-  - source: /
+  - source: s3://ngs-bucket7/MyFirstPipeline/BuildArtif/39jQ90m
     destination: /home/ec2-user/my-app
 permissions:
   - object: /home/ec2-user/my-app
