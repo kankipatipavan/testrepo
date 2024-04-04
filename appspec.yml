@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 
 files:
-  - source: /
+  - source: test_pipeline/deployment/my-application-deployment.zip
     destination: /home/ec2-user/my-app
     overwrite: true   # Optional: Specify whether to overwrite existing files in the destination
 permissions:
