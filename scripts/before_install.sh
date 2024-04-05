@@ -1,4 +1,4 @@
 #!/bin/bash
 
-echo "Skipping application stop in before_install phase."
-exit 0
+echo "cleaning the artifacts."
+mvn clean
