@@ -14,6 +14,6 @@ public class MyprogramController {
     @RequestMapping("/hello")
     public String hello()
     {
-        return "yayyyyyyy!!!";
+        return "Sample Spring Boot App successfully deployedd!!!";
     }
 }
