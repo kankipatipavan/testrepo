@@ -17,9 +17,13 @@ hooks:
     - location: clear_destination.sh
       timeout: 300
       runas: root
+    - location: stop_previous_version.sh
+      timeout: 300
+      runas: root  
     - location: before_install.sh
       timeout: 300
       runas: root
+    
   AfterInstall:
     - location: after_install.sh
       timeout: 300
