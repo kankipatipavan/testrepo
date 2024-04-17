@@ -1,0 +1,32 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      java: corretto17
+    commands:
+      - echo "Install phase"
+  pre_build:
+    commands:
+      - echo "Pre-build phase"
+  build:
+    commands:
+      - echo "Build phase"
+      - mvn clean package
+      # Assuming Maven package produces a JAR in target folder
+      
+      - cp target/*.jar /
+      # Copy scripts and appspec file
+      - cp scripts/* /
+      - cp appspec.yml /
+      # Navigate to the deployment directory
+      # Zip all necessary files
+     
+artifacts:
+  files:
+    - target/*.jar
+    - scripts/*
+    - appspec.yml
+  discard-paths: yes
+
+    
