@@ -1,4 +1,12 @@
 #!/bin/bash
 
 echo "Starting the Spring Boot application..."
-java -jar /home/ec2-user/my-app/myprogram-0.0.1-SNAPSHOT.jar 
+
+# Full path to the Java executable
+JAVA_HOME=/opt/jdk-18/bin/java
+
+# Change to the directory where your JAR file is located
+cd /home/ec2-user/my-app/
+
+# Run the JAR file
+$JAVA_HOME -jar myprogram-0.0.1-SNAPSHOT.jar
