@@ -35,3 +35,4 @@ echo "Cleaning up..."
 sudo rm -f /tmp/openjdk-${JAVA_VERSION}_linux-x64_bin.tar.gz
 
 echo "Java JDK ${JAVA_VERSION} has been successfully installed."
+
