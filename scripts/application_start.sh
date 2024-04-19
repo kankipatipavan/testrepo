@@ -3,7 +3,7 @@
 echo "Starting the Spring Boot application..."
 
 # Full path to the Java executable
-#JAVA_HOME=/opt/jdk-18/bin/java
+JAVA_HOME=/opt/jdk-18/bin/java
 
 # Change to the directory where your JAR file is located
 #cd /home/ec2-user/my-app/
