@@ -9,7 +9,7 @@ echo "Starting the Spring Boot application..."
 #cd /home/ec2-user/my-app/
 
 #setting permissions
-chmod +x /home/ec2-user/my-app/myprogram-0.0.1-SNAPSHOT.jar
+#chmod +x /home/ec2-user/my-app/myprogram-0.0.1-SNAPSHOT.jar
 
 # Run the JAR file
 java -jar /home/ec2-user/my-app/myprogram-0.0.1-SNAPSHOT.jar 
