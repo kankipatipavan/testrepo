@@ -14,6 +14,6 @@ public class MyprogramController {
     @RequestMapping("/hello")
     public String hello()
     {
-        return "newwwww!!!";
+        return "check!!!";
     }
 }
