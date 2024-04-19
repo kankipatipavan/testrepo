@@ -12,5 +12,6 @@ echo "Starting the Spring Boot application..."
 chmod +x /home/ec2-user/my-app/myprogram-0.0.1-SNAPSHOT.jar
 
 # Run the JAR file
-java -jar /home/ec2-user/my-app/myprogram-0.0.1-SNAPSHOT.jar > /home/ec2-user/my-app/app.log 2>&1 &
+java -jar /home/ec2-user/my-app/myprogram-0.0.1-SNAPSHOT.jar 
+
 #> /home/ec2-user/my-app/app.log 2>&1 &
